@@ -4,6 +4,7 @@ from utils.var import REGIONS
 from api.riot_api_handler import get_summoner_puuid, get_summoner_matchs
 from model.instance import MODEL
 from utils.preprocessing import format_data
+import pandas as pd
 
 st.set_page_config(
     page_title="LoL Stats",
@@ -21,7 +22,7 @@ button = st.button("Buscar")
 
 
 if nick_name and button:
-    # try:
+    try:
         nick, tag = nick_name.split("#")
         puuid = get_summoner_puuid(nick, tag, REGIONS.get(region), st.error)
         matchs = get_summoner_matchs(puuid, REGIONS.get(region))
@@ -29,7 +30,15 @@ if nick_name and button:
         format_data(matchs)
 
         pred = MODEL.predict(matchs)
-        st.dataframe(matchs['win'])
-        st.dataframe(pred)
-    # except ValueError:
-    #     st.error("Nome de invocador inválido")
+        probabilidade = MODEL.predict_proba(matchs)[:, 1]
+
+        df = pd.DataFrame()
+
+        df['Resultado Real (Vitória)'] = matchs['win']
+        df['Resultado Predito(Vitória)'] = pred
+        df['Probabilidade de Vitória'] = probabilidade
+        df['Probabilidade de Vitória'] = df['Probabilidade de Vitória'].map(lambda x: f'{x * 100:.2f}%')
+
+        st.dataframe(df, hide_index=True)
+    except ValueError:
+        st.error("Nome de invocador inválido")
