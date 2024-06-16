@@ -20,8 +20,7 @@ Você pode acompanhar cada etapa na pasta ``/notebooks`` desde projeto, na ordem
 
 # Interface
 
-Na nossa última etapa, criamos uma interface utilizando Streamlit que irá consultar todas as suas últimas 10 partidas de Lol e o modelo irá calcular a probabilida de vitória dessas partidas, além de comparar o resultado real da partida com o predito.
-
+Na nossa última etapa, criamos uma interface utilizando Streamlit que irá consultar todas as suas últimas 10 partidas de Lol e o modelo irá calcular a probabilida de vitória dessas partidas, além de comparar o resultado real da partida com o predito. Você pode acessar a interface através desse link: https://predict-lol-match.streamlit.app/
 
 #### E para finalizar, dizer muito obrigado à EBAC pelo excelente curso, e dizer à Semantix que eu ficaria extremamente honrado em trabalhar pra empresa 😊😊😊😊
 
@@ -30,4 +29,45 @@ Na nossa última etapa, criamos uma interface utilizando Streamlit que irá cons
 - E-mail: shadyrajaab@gmail.com
 - Telefone: 61 99820-7214
 
+## Tecnologias Utilizadas
 
+- [Python](https://www.python.org/)
+- [Streamlit](https://streamlit.io/)
+- [scikit-learn](https://scikit-learn.org/stable/)
+- [pandas](https://pandas.pydata.org/)
+- [imbalanced-learn (SMOTE)](https://imbalanced-learn.org/stable/)
+- [requests](https://pypi.org/project/requests/)
+
+
+# API da riot
+
+Você pode criar um token da API da Riot através desse link: https://developer.riotgames.com/
+
+## Como Executar o Projeto
+
+### Pré-requisitos
+
+- Python 3.7 ou superior
+- Pip (gerenciador de pacotes do Python)
+
+### Instalação
+
+1. Clone o repositório para sua máquina local:
+
+```sh
+git clone https://github.com/shadyrajab/predict-lol-match
+```
+
+2. Crie um ambiente virtual:
+```sh
+python -m venv venv
+```
+3. Instale as dependências:
+```sh
+pip install -r requirements.txt
+```
+
+# Executando a Aplicação
+```sh
+streamlit run Início.py
+```
