@@ -2,7 +2,7 @@
 
 Olá, meu nome é Shady! Prazer, este é o meu TCC do curso de Ciência de Dados da EBAC. Além de um TCC, esse projeto também faz parte do programa de parceria com a Semantix, com a possibilidade de contratação pela Empresa.
 
-Primeiramente eu gostaria de fazer uma breve apresentação. Tenho 20 anos, comecei a programar aos 14 quando aprendi minha primeira linguagem de programação(Python). Meu interesse por programação veio graças à minha paixão por jogos, pois sempre sonhei em fazer um jogo, sonho que eu mantenho até os dias de hoje. Desenvolvi diversos projetos pessoais, seja em Python ou outras linguagens. Mais pra frente, aos 19 anos, comecei a me interessas pela área de dados devido ao seu constante crescimento e interesse em modelos de inteligência artificial.
+Primeiramente eu gostaria de fazer uma breve apresentação. Tenho 20 anos, comecei a programar aos 14 quando aprendi minha primeira linguagem de programação(Python). Meu interesse por programação veio graças à minha paixão por jogos, pois sempre sonhei em fazer um jogo, sonho que eu mantenho até os dias de hoje. Desenvolvi diversos projetos pessoais, seja em Python ou outras linguagens. Mais pra frente, aos 19 anos, comecei a me interessar pela área de dados devido ao seu constante crescimento e interesse em modelos de inteligência artificial.
 
 
 # Construção do projeto:
@@ -71,3 +71,7 @@ pip install -r requirements.txt
 ```sh
 streamlit run Início.py
 ```
+
+[streamlit-Início-2024-06-16-17-06-87.webm](https://github.com/shadyrajab/predict-lol-match/assets/65933264/70dd2a20-b2e7-4287-bf6a-8ec8ef21bcb9)
+
+
