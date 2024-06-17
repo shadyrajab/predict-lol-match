@@ -40,5 +40,5 @@ if nick_name and button:
         df['Probabilidade de Vitória'] = df['Probabilidade de Vitória'].map(lambda x: f'{x * 100:.2f}%')
 
         st.dataframe(df, hide_index=True)
-    except ValueError:
-        st.error("Nome de invocador inválido")
+    except:
+        st.error("O nick informado está inválido, ou não possui partidas à serem analisadas.")
